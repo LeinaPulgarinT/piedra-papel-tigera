@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   background-color: rgb(40, 38, 49);
+  font-family: "Noto Sans", sans-serif;
 }
 
 header {
@@ -16,7 +17,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Noto Sans", sans-serif;
 }
 
 .score-box {
@@ -58,8 +58,76 @@ header {
 
 .points {
   color: white;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   font-size: 2em;
+}
+
+.creador {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.creador p {
+  color: white;
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.picturesbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.picture {
+  border: 2px solid white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+  cursor: pointer;
+}
+
+.picture:hover {
+  animation-name: animation;
+  animation-iteration-count: 1;
+  animation-duration: 1000ms;
+  background-color: white;
+  transition: background-color 1000ms;
+}
+
+.rock {
+  background-image: url(../img/rock.jpg);
+}
+
+.paper {
+  background-image: url(../img/paper.jpg);
+}
+.scissors {
+  background-image: url(../img/scissors.jpg);
+}
+
+.movebox {
+  display: flex;
+  justify-content: center;
+}
+.movebox p {
+  margin-top: 2em;
+  color: white;
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+@keyframes animation {
+  from {
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
