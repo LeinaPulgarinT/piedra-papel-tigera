@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(40, 38, 49);
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.score-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.9rem;
+}
+
+.score-container {
+  border: 2px solid white;
+  height: 100px;
+  width: 230px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  width: 40px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 40%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userlabel {
+  left: -1.2em;
+}
+
+.cpulabel {
+  right: -1.2em;
+}
+
+.points {
+  color: white;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: 2em;
+}
