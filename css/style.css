@@ -131,3 +131,7 @@ header {
     transform: rotateZ(360deg);
   }
 }
+
+.creador #winner {
+  display: none;
+}
